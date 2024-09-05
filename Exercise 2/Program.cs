@@ -7,20 +7,20 @@ namespace Program
         public static void Main()
         {
             //Products
-            var book_1 = new Product("Percy Jackson and the Olympians - The Lighting Thief", 59.90f);
-            var book_2 = new Product("Percy Jackson and the Olympians - The Sea of Monsters", 59.90f);
-            var book_3 = new Product("Percy Jackson and the Olympians - The Titan's Curse", 59.90f);
-            var book_4 = new Product("Percy Jackson and the Olympians - The Battle of the Labyrinth", 59.90f);
-            var book_5 = new Product("Percy Jackson and the Olympians - The Last Olympian", 59.90f);
-            var book_6 = new Product("White Fang", 39.90f);
-            var book_7 = new Product("The Little Prince", 34.90f);
-            var book_8 = new Product("The Man Who Hears Horses", 54.90f);
+            var book_1 = new Product("Memórias Póstumas de Brás Cubas", 24.90f);
+            var book_2 = new Product("O Som e o Sentido", 34.90f);
+            var book_3 = new Product("Os Sete Maridos de Evelyn Hugo", 39.90f);
+            var book_4 = new Product("Poema Sujo", 29.90f);
+            var book_5 = new Product("Genki", 199.90f);
+            var book_6 = new Product("Felicidade Clandestina", 19.90f);
+            var book_7 = new Product("Crime e Castigo", 69.90f);
+            var book_8 = new Product("A Metamorfose", 39.90f);
 
             //Clients
-            var pedro = new Client("example@gmail.com", "Pedro da Fonseca Schwertner");
+            var machado = new Client("deassis@gmail.com", "Machado de Assis");
 
             //Cart
-            var myCart = new Cart(pedro);
+            var myCart = new Cart(machado);
 
             myCart.AddProduct(book_1);
             myCart.AddProduct(book_3);
@@ -29,8 +29,8 @@ namespace Program
             myCart.AddProduct(book_7);
 
             //Show info
-            Console.WriteLine($"Order #1785\n------------------------------\n");
-            pedro.ShowInfo();
+            Console.WriteLine($"Order #5987\n------------------------------\n");
+            machado.ShowInfo();
             Console.WriteLine("\n------------------------------\n");
             foreach (var item in myCart.Products)
             {
